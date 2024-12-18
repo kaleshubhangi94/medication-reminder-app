@@ -1,0 +1,151 @@
+/* General App Styles */
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Medicine Schedule Component Styles */
+.medicine-schedule-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.medicine-schedule-form {
+  margin-bottom: 30px;
+}
+
+.medicine-schedule-form h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.medicine-schedule-form .input-field {
+  margin-bottom: 15px;
+}
+
+.medicine-schedule-form .input-field label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.medicine-schedule-form .input-field input,
+.medicine-schedule-form .input-field ion-datetime {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.medicine-schedule-form .input-field ion-button {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.medicine-schedule-form .input-field ion-button:hover {
+  background-color: #45a049;
+}
+
+/* Weekly Calendar Styles */
+.calendar-container {
+  margin-bottom: 30px;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.week-day {
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 5px;
+  width: 13%;
+  transition: background-color 0.3s;
+}
+
+.week-day:hover {
+  background-color: #e7e7e7;
+}
+
+.week-day.selected {
+  background-color: #4caf50;
+  color: white;
+}
+
+.week-day p {
+  margin: 0;
+}
+
+.week-day .date {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Table for Medicine List */
+.medicine-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.medicine-table th,
+.medicine-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.medicine-table th {
+  background-color: #f4f4f4;
+  font-size: 16px;
+}
+
+.medicine-table td {
+  font-size: 14px;
+}
+
+.medicine-table td.no-schedule {
+  font-style: italic;
+  color: #888;
+}
+
+/* Loading State */
+.loading {
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+}
